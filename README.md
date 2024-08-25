@@ -8,11 +8,13 @@ Having multiple versions/stacks of the same [website](https://flexworks.eu), the
 
 ## execute
 
+binary
+
 ```shell
 ./flexsitecfg --config config.json --output nginx.upstream.conf
 ```
 
-
+run code
 ```shell
 dotnet run -- --config config.json --output nginx.upstream.conf
 ```
