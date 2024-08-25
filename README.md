@@ -49,7 +49,7 @@ dotnet run -- --config config.json --output nginx.upstream.conf
 
 ### output
 
-```conf
+```nginx
 # first backend
 upstream backend_id1 {
     server 192.168.1.1:8080;
@@ -64,9 +64,6 @@ upstream backend_servers {
     server 192.168.1.1:8080 max_fails=3 fail_timeout=30s;
     server 192.168.1.3:4040 max_fails=3 fail_timeout=30s;
 }
-
-
-
 
 ```
 
