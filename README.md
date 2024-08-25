@@ -16,7 +16,7 @@ Having multiple versions/stacks of the same [website](https://flexworks.eu), the
 ```shell
 dotnet run -- --config config.json --output nginx.upstream.conf
 ```
-* mind the intentional **--**, it's there for a reason
+* mind the intentional **--**, it's there for a reason (terminate dotnet command and start cli arguments for flexsitecfg)
 
 
 ## example
