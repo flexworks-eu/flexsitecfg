@@ -1,17 +1,17 @@
-﻿using flexsitecfg.Services;
+﻿using FlexSiteConfig.Services;
 
-namespace flexsitecfg {
+namespace FlexSiteConfig {
     class Program {
         static void Main(string[] args) {
             if (args.Length == 0) {
-                Console.WriteLine("Usage: flexsitecfg --config <path_to_json> --output <path_to_nginx_config>");
+                Console.WriteLine("Usage: FlexSiteConfig --config <path_to_json> --output <path_to_nginx_config>");
                 return;
             }
 
             string? configFilePath = null;
             string? outputFilePath = null;
 
-            // named arguments parsing
+            // named arguments
             for (int i = 0; i < args.Length; i++) {
                 switch (args[i]) {
                     case "--config":

@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
 using System.Collections.Generic;
 
-namespace flexsitecfg.Models {
+namespace FlexSiteConfig.Models {
     public class BackendServer {
         [JsonPropertyName("servername")]
         public string ServerName { get; set; } = string.Empty;
