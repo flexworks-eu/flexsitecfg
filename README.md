@@ -26,34 +26,47 @@ dotnet run -- --config config.json --output nginx.upstream.conf
 ```json
 {
     "backend_id1": {
-        "description": "zig backend",
+        "description": "first backend",
         "backend_servers": [
             {
                 "servername": "192.168.1.1",
                 "port": 8080
-            },
+            }
+        ]
+    },
+    "backend_id2": {
+        "description": "another backend",
+        "backend_servers": [
             {
-                "servername": "192.168.1.2",
-                "port": 8081
+                "servername": "192.168.1.3",
+                "port": 4040
             }
         ]
     }
 }
+
 ```
 
 ### output
 
 ```conf
-# zig backend
+# first backend
 upstream backend_id1 {
     server 192.168.1.1:8080;
-    server 192.168.1.2:8081;
+}
+
+# another backend
+upstream backend_id2 {
+    server 192.168.1.3:4040;
 }
 
 upstream backend_servers {
     server 192.168.1.1:8080 max_fails=3 fail_timeout=30s;
-    server 192.168.1.2:8081 max_fails=3 fail_timeout=30s;
+    server 192.168.1.3:4040 max_fails=3 fail_timeout=30s;
 }
+
+
+
 
 ```
 
