@@ -1,9 +1,9 @@
 PHONY: build run
 
-build-mac:
+build-linux:
 	dotnet publish -c Release -r linux-arm64 --self-contained true /p:PublishSingleFile=true /p:EnableCompressionInSingleFile=true
 
-build-linux:
+build-mac:
 	dotnet publish -c Release -r osx-arm64 --self-contained true /p:PublishSingleFile=true /p:EnableCompressionInSingleFile=true
 
 run:

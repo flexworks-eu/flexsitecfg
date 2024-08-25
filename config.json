@@ -1,19 +1,64 @@
 {
     "backend_id1": {
-        "description": "first backend",
+        "description": "rust arm64 on cpi6",
         "backend_servers": [
             {
-                "servername": "192.168.1.1",
-                "port": 8080
+                "servername": "192.168.0.2",
+                "port": 3001
             }
         ]
     },
     "backend_id2": {
-        "description": "another backend",
+        "description": "rust arm32",
         "backend_servers": [
             {
                 "servername": "192.168.1.3",
                 "port": 4040
+            }
+        ]
+    },
+    "backend_id3": {
+        "description": "zig on arm64 on cpi7",
+        "backend_servers": [
+            {
+                "servername": "192.168.0.15",
+                "port": 3002
+            }
+        ]
+    },
+    "backend_id5": {
+        "description": "zig on raspi zero 2W",
+        "backend_servers": [
+            {
+                "servername": "192.168.0.246",
+                "port": 3005
+            }
+        ]
+    },
+    "backend_id6": {
+        "description": "go on raspi zero 2W",
+        "backend_servers": [
+            {
+                "servername": "192.168.0.246",
+                "port": 4001
+            }
+        ]
+    },
+    "backend_id7": {
+        "description": "go on arm64 on cpi7",
+        "backend_servers": [
+            {
+                "servername": "192.168.0.15",
+                "port": 4000
+            }
+        ]
+    },
+    "backend_id8": {
+        "description": "python on arm64 on cpi7",
+        "backend_servers": [
+            {
+                "servername": "192.168.0.15",
+                "port": 3003
             }
         ]
     }
