@@ -4,7 +4,7 @@ namespace FlexSiteConfig {
     class Program {
         static void Main(string[] args) {
             if (args.Length == 0) {
-                Console.WriteLine("Usage: FlexSiteConfig --config <path_to_json> --output <path_to_nginx_config>");
+                Console.WriteLine("Usage: flexsitecfg --config <path_to_json> --output <path_to_nginx_config>");
                 return;
             }
 
